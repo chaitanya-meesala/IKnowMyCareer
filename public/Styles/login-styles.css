@@ -1,0 +1,320 @@
+
+@font-face {
+    font-family: 'Opensans_Semibold';
+    src: url('../open-sans/OpenSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Opensans_Light';
+    src: url('../open-sans/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Opensans_Regular';
+    src: url('../open-sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Opensans_Italic';
+    src: url('../open-sans/OpenSans-Italic.ttf') format('truetype');
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+div,table,span,img,p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    font-family: inherit;
+    text-align: left;
+}
+
+
+.login-button-label{
+
+    background-color: #247778;
+}
+
+.kmc-button{
+    background: none;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 13px;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    white-space: nowrap;
+}
+
+#login-div{
+    width: 90%;
+    height: 600px;
+    background-color: #247778;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.login-banner{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    background-color: #1D5F60;
+}
+
+#logo{
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 85px;
+}
+
+.logo-caption{
+    margin-left: 162px;
+    color: aliceblue;
+    font-style: italic;
+    font-size: 17px;
+    font-family: cursive;
+}
+
+.sign-up-link
+{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 19px;
+}
+
+.login-banner table tr td{
+    padding: 0 0 0 14px;
+}
+
+.data-label{
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    padding-bottom: 0px !important;
+}
+
+.data-input{
+    border-color: #247778;
+    margin: 0;
+    width: 150px;
+    height: 22px;
+    font-family: 'lucida grande';
+    font-size:12px;
+    padding-left: 3px;
+}
+
+.login-banner .data-label{
+    color: white;
+    padding-left: 16px;
+    padding-top: 4px;
+}
+
+
+
+.login-banner .data-input{
+    color: #333333;
+}
+
+.forgot-username{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.login-banner a:hover{
+    color: antiquewhite !important;
+    text-decoration: none;
+}
+
+.forgot-password{
+    margin-left: 5px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.login-carousel .carousel-indicators{
+    bottom: -40px !important;
+}
+
+.login-carousel .carousel-indicators li{
+    margin-left: 3px !important;
+}
+
+.login-carousel .carousel-indicators li .active{
+    margin-left: 3px;
+}
+
+.login-carousel .carousel-control{
+    opacity: 0.8 !important;
+}
+
+.login-carousel .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+    margin-right: -67px;
+    cursor: pointer;
+}
+ .login-carousel .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+    margin-left: -70px;
+    cursor: pointer;
+}
+
+ .login-carousel .carousel-control:hover, .carousel-control:focus{
+     opacity: 0.9 !important;
+ }
+
+.carousel-element{
+    height: 300px;
+    width: 500px;
+    background-color: #1D5F60;
+}
+
+.login-carousel .carousel-control.right{
+    background-image: none !important;
+}
+
+.login-carousel .carousel-control.left{
+    background-image: none !important;
+}
+
+.carousel-image{
+    height: 200px;
+    float: left;
+    margin: 50px 0 50px 20px;
+    width: 300px;
+}
+
+.carousel-data{
+    float: right;
+    width: 150px;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.message{
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 55px;
+    font-family: 'Open Sans';
+    color: mintcream;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+
+.sign-up-button{
+    position: absolute;
+    margin-left: 217px;
+    margin-top: 22px;
+    background-color: #193b58;
+    color: azure;
+    border: 3px solid #193b58;
+    font-family: 'Courgette';
+}
+
+.register-button{
+    position: absolute;
+    margin-left: 417px;
+    margin-top: 92px;
+    background-color: #193b58;
+    color: azure;
+    border: 3px solid #193b58;
+    font-family: 'Courgette';
+}
+
+#registration-div{
+    width: 90%;
+    height: 600px;
+    background-color: #247778;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.registration-form{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.registration-form .data-label{
+    color: mintcream;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.registration-form td{
+    padding-top: 18px;
+
+}
+
+.registration-form .data-input{
+    border-color: transparent;
+    margin: 0;
+    width: 170px;
+    height: 24px;
+    border-radius: 3px;
+    font-family: 'lucida grande';
+    font-size: 12px;
+    padding-left: 5px;
+    background-color: darkslategrey;
+    color: #ffffff;
+}
+
+textarea:focus, input:focus, input[type=text]:focus, .uneditable-input:focus {
+    border-color: #247778;
+    box-shadow: 0 1px 1px rgba(50, 119, 135, 0.075) inset, 0 0 8px rgba(50, 119, 135, 0.6);
+    outline: 0 none;
+}
+
+.registration-details-format{
+    float: left;
+    height: 260px;
+    width: 30%;
+    margin-top: 80px;
+    background-color: darkslategray;
+    font-family: 'lucida grande';
+}
+
+.username-format{
+    font-size: 14px;
+    color: aquamarine;
+    display: block;
+    line-height: 2;
+}
+
+.error-display{
+    font-family: 'lucida grande';
+    margin-top: 70px;
+    margin-left: 10px;
+    color: #ff4;
+}
+
+.error-view-div{
+    width: 90%;
+    height: 600px;
+    color: crimson;
+    padding-top: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.success-view-div{
+    width: 90%;
+    height: 600px;
+    padding-top: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}

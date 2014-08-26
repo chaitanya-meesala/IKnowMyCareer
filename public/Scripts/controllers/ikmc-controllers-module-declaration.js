@@ -1,0 +1,1 @@
+var ikmcControllersModule = angular.module('ikmcControllersModule',['ui.bootstrap','ikmcServiceModule']);

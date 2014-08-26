@@ -1,0 +1,75 @@
+<div id="registration-div">
+
+<div class="registration-form" style="float:left;width:60%;">
+    <div id="logo" style="margin-top: -26px;margin-left: -50px;padding-bottom: 25px;font-family: 'Roboto';color: ghostwhite;font-size: 23px;">
+        <span >I Know My Career - Sign Up</span>
+    </div>
+
+    <form>
+    <table>
+
+        <tr>
+            <td><span class="data-label">*Username:</span></td>
+            <td><input class="data-input" data-ng-focus="usernameFieldFocusEvent();" data-ng-blur="usernameFieldBlurEvent();" data-ng-model="form.username" required=""/></td>
+        </tr>
+
+        <tr>
+            <td><span class="data-label">*Password:</span></td>
+            <td><input class="data-input" data-ng-blur="passwordFieldBlurEvent();" type="password" data-ng-model="form.password" required=""/></td>
+        </tr>
+        <tr>
+            <td><span class="data-label">*Confirm Password:</span></td>
+            <td><input class="data-input" data-ng-blur="confirmPasswordFieldBlurEvent();" type="password" data-ng-model="form.confirmPassword" required=""/></td>
+        </tr>
+        <tr>
+            <td><span class="data-label">*First Name:</span></td>
+            <td><input class="data-input" data-ng-model="form.firstName" required=""/></td>
+        </tr>
+        <tr>
+            <td><span class="data-label">*Last Name:</span></td>
+            <td><input class="data-input" data-ng-model="form.lastName" required=""/></td>
+        </tr>
+        <tr>
+            <td><span class="data-label">*Email Id:</span></td>
+            <td><input class="data-input" data-ng-focus="emailIdFieldFocusEvent();" data-ng-blur="emailIdFieldBlurEvent();" type="email" data-ng-model="form.emailId"></td>
+        </tr>
+        <tr>
+            <td><span class="data-label">&nbsp; College:</span></td>
+            <td><input class="data-input" data-ng-model="form.collegeName"/></td>
+        </tr>
+        <tr>
+            <td><span class="data-label"> &nbsp; Department:</span></td>
+            <td><input class="data-input" data-ng-model="form.departmentName"/></td>
+        </tr>
+    </table>
+        <button type="submit" class="sign-up-button" data-ng-click="register();">Sign Up</button>
+        <div class="error-display">
+            <span style="display: block;" data-ng-show="isUsernameFormatWrong">The username is not in valid format</span>
+            <span style="display: block;" data-ng-show="isUsernameAvailable">The username is unavailable! Please choose another</span>
+            <span style="display: block;" data-ng-show="isPasswordFormatWrong">The password is in wrong format</span>
+            <span style="display: block;" data-ng-show="isPasswordNotVerified">The password and confirm password does not match</span>
+            <span style="display: block;" data-ng-show="isUsernameAlreadyExists">The username already exists. Please choose another.</span>
+            <span style="display: block;" data-ng-show="isEmailAlreadyExists">The email already registered. Please choose another.</span>
+            <span style="display: block;" data-ng-show="errorState">{{errorMessage}}</span>
+        </div>
+
+
+        </form>
+
+
+
+</div>
+    <div class="registration-details-format">
+       <div style="color: mintcream;padding-left: 10px;padding-top:10px;padding-right: 5px;">
+           <span class="username-format">Username: </span>
+           <span style="font-size: 13px;">The username should be between 6 to 30 characters. Not case-sensitive. Can contain letters,
+                 numbers, underscore and hyphen(-)</span>
+           <span class="username-format" style="margin-top: 15px;">Password: </span>
+           <span style="font-size: 13px;">The password should be between 8 to 128 characters. No spaces. Should contain atleast
+                 one lowercase letter, one uppercase letter, one number and one special character.</span>
+           <span style="font-size: 13px;margin-top:10px ;display: block;">The fields marked with (*) are mandatory</span>
+
+       </div>
+
+    </div>
+</div>

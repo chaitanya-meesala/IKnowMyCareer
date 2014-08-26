@@ -1,0 +1,1 @@
+var ikmcServiceModule = angular.module('ikmcServiceModule',[]);

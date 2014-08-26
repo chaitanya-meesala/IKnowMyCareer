@@ -1,0 +1,47 @@
+<div id="login-div" data-ng-controller="loginController">
+    <div class="login-banner">
+
+        <table style="float: left;">
+            <tr><td style="padding-top:10px;"><span id="logo">I Know My Career</span></td></tr>
+            <tr><td style="padding: 0;"><span class="logo-caption">Do you? <a class="sign-up-link" href="#register">Sign up</a> and let us help you</span></td></tr>
+        </table>
+
+        <table cellspacing="0" class="table-condensed" style="float: right;margin-right: 35px;">
+            <tbody>
+            <tr>
+                <td class="data-label"><label for="email">Username</label></td>
+                <td class="data-label"><label for="pass">Password</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="data-input" name="email" id="email" value="" tabindex="1"></td>
+                <td><input type="password" class="data-input" name="pass" id="pass" tabindex="2"></td>
+                <td><label for="loginButton" class="login-button-label"><input class="kmc-button login-button-label"  value="Log In" tabindex="4" type="submit" id="loginButton"></label></td>
+            </tr>
+            <tr>
+                <td class="data-label"><input style="margin-left: -1px;" type="checkbox" value="1" tabindex="3"><label style="margin-left: 4px;">Stay signed in</label></td>
+                <td class="data-label" style="padding-top: 5px;"><label>Forgot</label><a class="forgot-username" href="#">username</a><label>or</label><a class="forgot-password" href="#">password</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <div style="height: 300px;width:500px;margin-left:45px;padding-top: 50px;" class="login-carousel">
+        <carousel interval="carouselControls.slideInterval">
+            <slide data-ng-repeat="slide in carouselControls.slides" active="slide.active">
+                <div style="height: 300px; width: 500px;" data-ng-include="slide.data"></div>
+            </slide>
+        </carousel>
+    </div>
+
+    <div class="message">
+        <span>An initiative to help college students in choosing a career that suits them best!</span>
+        <span style="color: aliceblue;font-size:13px;font-family: 'lucida grande';margin-left: 10px">&copy;iknowmycareer</span>
+    </div>
+
+    <div>
+        <button data-ng-click="goToView('register');" class="register-button"> Register for FREE!</button>
+    </div>
+</div>
