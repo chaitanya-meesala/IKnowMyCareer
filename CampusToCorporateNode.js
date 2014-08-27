@@ -17,22 +17,36 @@ var useragent = require('useragent');
 
 var secret = "7x7k^9K^+=sM5HHSAK";
 
-var webServiceUrl = 'http://localhost:8080';
+var proxyUrl = 'http://services.iknowmycareer.com';
+var devServerUrl = 'http://dev-services.iknowmycareer.com';
+var dev01ServerUrl = 'http://dev01-services.iknowmycareer.com';
+var dev02ServerUrl = 'http://dev02-services.iknowmycareer.com';
+var dev03ServerUrl = 'http://dev03-services.iknowmycareer.com';
+var dev04ServerUrl = 'http://dev04-services.iknowmycareer.com';
 
-var webServicePartialUrl = 'http://localhost';
+var siteUrl = "http://iknowmycareer.com";
 
 //Declaring Proxy Server
 var proxy = httpProxy.createProxyServer({});
 
 
 //Load Balancing - Create Application Instances on 5 Ports and round robin through that application Instances
-var applicationInstancesAddresses = [
+/*var applicationInstancesAddresses = [
     {target: webServicePartialUrl + ':7000'},
     {target: webServicePartialUrl + ':7001'},
     {target: webServicePartialUrl + ':7002'},
     {target: webServicePartialUrl + ':7003'},
     {target: webServicePartialUrl + ':7004'}
-];
+];*/
+
+var applicationInstancesAddresses = [
+ { target: devServerUrl },
+ { target: dev01ServerUrl },
+ { target: dev02ServerUrl },
+ { target: dev03ServerUrl },
+ { target: dev04ServerUrl }
+ ];
+
 
 //Creating Proxy Server on Port 8080. Round Robin Load Balancing Strategy
 http.createServer(function (request, response) {
@@ -41,6 +55,7 @@ http.createServer(function (request, response) {
     request.headers['client-ip-address'] = ipaddress;
     proxy.web(request, response, targetApplicationInstance);
     applicationInstancesAddresses.push(targetApplicationInstance);
+    logger.info("Server Started at Port 8080");
 }).listen(8080);
 
 //Declaring Collge To Corporate Application
@@ -298,7 +313,7 @@ collegeToCorporateApp.get('/emailvalidation', function (request, response) {
     getEmailIdAccessTokenValidity(username, emailIdValidationToken).then(updateRegistrationStatusPromise).then(function (success) {
         if (success.isEmailIdAccessTokenValid) {
             //response.json({internalStatusCode: 1000});
-            response.redirect(webServiceUrl + '/Initiative/Login.html')
+            response.redirect(siteUrl);
         } else {
             response.json({internalStatusCode: AuthenticationModuleErrorCodes.USER_EMAIL_ACCESS_TOKEN_VALID_ERRORCODE, errorMessage: "The access token is not valid"});
         }
@@ -559,7 +574,7 @@ var generateAndUpdateEmailVerificationToken = function (a, b, c) {
 
 var constructConfimationLinkEmailOptions = function (emailId, token, firstName, lastName, username) {
     logger.info("Entered into construct confirmation link email options function");
-    var activationLink = webServiceUrl + "/emailvalidation?userid=" + username + "&emailidvalidationtoken=" + token;
+    var activationLink = proxyUrl + "/emailvalidation?userid=" + username + "&emailidvalidationtoken=" + token;
     return {
         from: "DoNotReply<campustocorporateteam@gmail.com>", // sender address
         to: emailId, // list of receivers
