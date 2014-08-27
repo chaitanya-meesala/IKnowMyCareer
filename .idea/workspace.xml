@@ -29,7 +29,7 @@
       <file leaf-file-name="CampusToCorporateNode.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CampusToCorporateNode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="-1.5566038" vertical-offset="900" max-vertical-offset="13080">
+            <state line="580" column="39" selection-start="29548" selection-end="29570" vertical-scroll-proportion="0.33167082" vertical-offset="8567" max-vertical-offset="13155">
               <folding />
             </state>
           </provider>
@@ -38,7 +38,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="19" selection-start="1519" selection-end="1555" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1140">
+            <state line="49" column="19" selection-start="1519" selection-end="1555" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -53,10 +53,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="configuration.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="appConfig.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/Scripts/common/appConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="86" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+            <state line="4" column="53" selection-start="136" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
               <folding />
             </state>
           </provider>
@@ -171,6 +180,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IKnowMyCareer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IKnowMyCareer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,9 +361,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CampusToCorporateUINode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="19" selection-start="1519" selection-end="1555" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1140">
+        <state line="49" column="19" selection-start="1519" selection-end="1555" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>
@@ -344,23 +382,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CampusToCorporateUINode.js">
+    <entry file="file://$PROJECT_DIR$/configuration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/Scripts/common/appConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="86" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+        <state line="4" column="53" selection-start="136" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CampusToCorporateNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="-1.5566038" vertical-offset="900" max-vertical-offset="13080">
+        <state line="580" column="39" selection-start="29548" selection-end="29570" vertical-scroll-proportion="0.33167082" vertical-offset="8567" max-vertical-offset="13155">
           <folding />
         </state>
       </provider>

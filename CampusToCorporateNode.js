@@ -17,12 +17,18 @@ var useragent = require('useragent');
 
 var secret = "7x7k^9K^+=sM5HHSAK";
 
-var proxyUrl = 'http://services.iknowmycareer.com';
-var devServerUrl = 'http://dev-services.iknowmycareer.com';
+var proxyUrl = 'http://58.146.113.237:8080';
+/*var devServerUrl = 'http://dev-services.iknowmycareer.com';
 var dev01ServerUrl = 'http://dev01-services.iknowmycareer.com';
 var dev02ServerUrl = 'http://dev02-services.iknowmycareer.com';
 var dev03ServerUrl = 'http://dev03-services.iknowmycareer.com';
-var dev04ServerUrl = 'http://dev04-services.iknowmycareer.com';
+var dev04ServerUrl = 'http://dev04-services.iknowmycareer.com';*/
+
+var devServerUrl =   'http://58.146.113.237:7000';
+var dev01ServerUrl = 'http://58.146.113.237:7001';
+var dev02ServerUrl = 'http://58.146.113.237:7002';
+var dev03ServerUrl = 'http://58.146.113.237:7003';
+var dev04ServerUrl = 'http://58.146.113.237:7004';
 
 var siteUrl = "http://iknowmycareer.com";
 
@@ -55,7 +61,6 @@ http.createServer(function (request, response) {
     request.headers['client-ip-address'] = ipaddress;
     proxy.web(request, response, targetApplicationInstance);
     applicationInstancesAddresses.push(targetApplicationInstance);
-    logger.info("Server Started at Port 8080");
 }).listen(8080);
 
 //Declaring Collge To Corporate Application
