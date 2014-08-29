@@ -1,0 +1,57 @@
+.ctc-nav-pill{
+    cursor: pointer;
+    background-color: brown;
+    color: #ffffff;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 1.18em;
+}
+
+.ctc-navigation .nav-tabs > li > a:hover{
+    cursor: pointer;
+    background-color: brown;
+    color: #ffffff;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 1.18em;
+}
+.ctc-branch-select {
+    margin-left: 10%;
+    margin-top: 20px;
+    float: left;
+    display: inline;
+}
+
+.ctc-course-select{
+    margin-left: 2%;
+    margin-top: 20px;
+    float:left;
+    display: inline;
+
+}
+
+.ctc-concept-select{
+    margin-left: 2%;
+    margin-top: 20px;
+    float:left;
+    display: inline;
+}
+.ctc-concept-select{
+    margin-left: 2%;
+    margin-top: 20px;
+    float:left;
+
+}
+
+.ctc-submit-button{
+    margin-left: 2%;
+    margin-top: 20px;
+    float:left;
+    display: inline;
+}
+
+.ctc-branch-select div:hover{
+    background-color: #31b0d5;
+    color: white;
+}
+

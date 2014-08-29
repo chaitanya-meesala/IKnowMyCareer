@@ -1,0 +1,26 @@
+<div style="background-color: #247778;color: #000000 ;margin-left:14%; font-family: 'Segoe UI';font-size: 200%;position: absolute;width: 80%;height:99%">
+    <div  style="background-color: #247778;width:95%; height: 90%; margin: 5px; padding-bottom: 25px; padding-top: 25px;padding-left: 30px; ">
+        <form>
+            <div ng-controller="feedbackController" style="background-color: #247778">
+
+                <ul style="list-style: none;">
+                    <li ng-repeat="quest in questions">
+
+                        <my-dir ng-if="quest.type==='SELECT'" info="quest"></my-dir>
+
+                        <multiple-select ng-if="quest.type==='MULTIPLE'" info="quest"></multiple-select>
+
+                        <short-Answer  ng-if="quest.type==='ShortAnswer'" info="quest"></short-Answer>
+
+
+                    </li>
+
+                </ul>
+
+                <div style="margin-left: 3%;margin-top: 5%">
+                    <button type="button" class="btn btn-default" style="font-family: 'Tangerine', serif;">Sumbit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

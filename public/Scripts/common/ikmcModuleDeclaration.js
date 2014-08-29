@@ -1,7 +1,7 @@
 /**
  * Created by sudheerkumarmeesala on 8/11/14.
  */
-var ikmcApp = angular.module('ikmcApp',['ngRoute','ikmcControllersModule']);
+var ikmcApp = angular.module('ikmcApp',['ngRoute','ikmcControllersModule','ikmcDirectivessModule']);
 
 ikmcApp.config(['$httpProvider',function($httpProvider){
     $httpProvider.interceptors.push('authInterceptor');
@@ -30,6 +30,10 @@ ikmcApp.config(['$routeProvider',function($routeProvider){
             templateUrl: 'Partials/error.html',
             controller: 'errorController',
             isLoginRequired: false
+        }).
+        when('/feedback',{
+            templateUrl: 'Partials/feedback.html',
+            controller: 'feedbackController'
         }).
         otherwise({
             redirectTo: '/'

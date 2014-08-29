@@ -1,0 +1,1 @@
+var ikmcDirectivessModule = angular.module('ikmcDirectivessModule',[]);
