@@ -5,8 +5,8 @@ ikmcDirectivessModule.directive('multipleSelect',function(){
     return {
         restrict: 'E',
         scope: {
-            customerInfo: '=info'
+            question: '=question'
         },
-        templateUrl: 'Partials/multiple-select.html'
+        templateUrl: 'Templates/ikmc-feedback-question-multiple-select.html'
     };
 });

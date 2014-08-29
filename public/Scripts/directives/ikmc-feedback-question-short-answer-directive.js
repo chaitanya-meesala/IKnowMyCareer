@@ -2,8 +2,8 @@ ikmcDirectivessModule.directive('shortAnswer',function(){
     return {
         restrict: 'E',
         scope: {
-            customerInfo: '=info'
+            question: '=question'
         },
-        templateUrl: 'Partials/short-answer.html'
+        templateUrl: 'Templates/ikmc-feedback-question-short-answer.html'
     };
 });

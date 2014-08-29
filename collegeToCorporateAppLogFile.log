@@ -85,3 +85,13 @@
 {"username":"Chaitanya","errorDescription":"The password entered is incorrect for username: Chaitanya","errorCode":2002,"level":"error","message":"","timestamp":"2014-08-29T17:00:08.045Z"}
 {"username":"Chaitanya","errorDescription":"The password entered is incorrect for username: Chaitanya","errorCode":2002,"level":"warn","message":"","timestamp":"2014-08-29T17:00:37.048Z"}
 {"username":"Chaitanya","errorDescription":"The password entered is incorrect for username: Chaitanya","errorCode":2002,"level":"error","message":"","timestamp":"2014-08-29T17:00:37.050Z"}
+{"username":"chjdbfs","errorDescription":"The username chjdbfs does not exists in database","errorCode":2001,"level":"warn","message":"","timestamp":"2014-08-29T17:40:29.749Z"}
+{"username":"chjdbfs","errorDescription":"The username chjdbfs does not exists in database","errorCode":2001,"level":"error","message":"","timestamp":"2014-08-29T17:40:29.750Z"}
+{"username":"chaitanyabhd","errorDescription":"The username chaitanyabhd does not exists in database","errorCode":2001,"level":"warn","message":"","timestamp":"2014-08-29T17:44:08.153Z"}
+{"username":"chaitanyabhd","errorDescription":"The username chaitanyabhd does not exists in database","errorCode":2001,"level":"error","message":"","timestamp":"2014-08-29T17:44:08.153Z"}
+{"username":null,"errorDescription":"The username null does not exists in database","errorCode":2001,"level":"warn","message":"","timestamp":"2014-08-29T18:46:43.543Z"}
+{"username":null,"errorDescription":"The username null does not exists in database","errorCode":2001,"level":"error","message":"","timestamp":"2014-08-29T18:46:43.544Z"}
+{"username":null,"errorDescription":"The username null does not exists in database","errorCode":2001,"level":"warn","message":"","timestamp":"2014-08-29T18:47:01.198Z"}
+{"username":null,"errorDescription":"The username null does not exists in database","errorCode":2001,"level":"error","message":"","timestamp":"2014-08-29T18:47:01.199Z"}
+{"username":"fsgdgsdgd","errorDescription":"The username fsgdgsdgd does not exists in database","errorCode":2001,"level":"warn","message":"","timestamp":"2014-08-29T20:19:30.003Z"}
+{"username":"fsgdgsdgd","errorDescription":"The username fsgdgsdgd does not exists in database","errorCode":2001,"level":"error","message":"","timestamp":"2014-08-29T20:19:30.014Z"}

@@ -14,13 +14,12 @@ ikmcControllersModule.controller('loginController',['$scope','$rootScope','$loca
         $location.path(view);
     };
 
-    $rootScope.isUserAuthenticated = false;
+
     $scope.authenticationErrorFlag = false;
 
     $rootScope.$on('$routeChangeStart', function (event, next) {
         var userAuthenticated = $rootScope.isUserAuthenticated;
-
-        if (!userAuthenticated && next.loginRequired) {
+        if (!userAuthenticated ) {
             $location.path('/');
         }
     });
@@ -34,6 +33,7 @@ ikmcControllersModule.controller('loginController',['$scope','$rootScope','$loca
             }
             else{
                 $scope.authenticationErrorFlag = true;
+                alert("Wrong Credentials");
             }
         },function(error){
             $location.path('/error');
