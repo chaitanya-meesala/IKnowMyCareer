@@ -10,3 +10,8 @@ IKMC.RequestObjects.UserRegistrationData = function(data){
     this.collegeName = data.collegeName;
     this.departmentName = data.departmentName;
 }
+
+IKMC.RequestObjects.AuthenticateUser = function(data){
+    this.username = data.username;
+    this.password = data.password;
+}

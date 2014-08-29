@@ -13,19 +13,23 @@ ikmcApp.config(['$routeProvider',function($routeProvider){
     $routeProvider.
         when('/',{
             templateUrl: 'Partials/login.html',
-            controller: 'loginController'
+            controller: 'loginController',
+            isLoginRequired: false
         }).
         when('/register',{
             templateUrl: 'Partials/register.html',
-            controller: 'registrationController'
+            controller: 'registrationController',
+            isLoginRequired: false
         }).
         when('/success',{
             templateUrl: 'Partials/success.html',
-            controller: 'successController'
+            controller: 'successController',
+            isLoginRequired: false
         }).
         when('/error',{
             templateUrl: 'Partials/error.html',
-            controller: 'errorController'
+            controller: 'errorController',
+            isLoginRequired: false
         }).
         otherwise({
             redirectTo: '/'

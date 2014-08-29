@@ -13,9 +13,9 @@
                 <td class="data-label"><label for="pass">Password</label></td>
             </tr>
             <tr>
-                <td><input type="text" class="data-input" name="email" id="email" value="" tabindex="1"></td>
-                <td><input type="password" class="data-input" name="pass" id="pass" tabindex="2"></td>
-                <td><label for="loginButton" class="login-button-label"><input class="kmc-button login-button-label"  value="Log In" tabindex="4" type="submit" id="loginButton"></label></td>
+                <td><input type="text" data-ng-model="loginCredentials.username" class="data-input" name="email" id="email" value="" tabindex="1"></td>
+                <td><input type="password" data-ng-model="loginCredentials.password" class="data-input" name="pass" id="pass" tabindex="2"></td>
+                <td><label for="loginButton" class="login-button-label"><input class="kmc-button login-button-label"  value="Log In" tabindex="4" type="submit" data-ng-click="logIn();" id="loginButton"></label></td>
             </tr>
             <tr>
                 <td class="data-label"><input style="margin-left: -1px;" type="checkbox" value="1" tabindex="3"><label style="margin-left: 4px;">Stay signed in</label></td>
