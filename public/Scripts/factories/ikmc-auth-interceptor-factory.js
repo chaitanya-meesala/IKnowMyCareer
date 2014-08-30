@@ -4,6 +4,7 @@ ikmcApp.factory('authInterceptor',['$rootScope','$window',function($rootScope,$w
             config.headers = config.headers || {};
             if($window.sessionStorage.token){
                 config.headers.Authorization = 'Bearer '+ $window.sessionStorage.token;
+                alert(config.headers.Authorization.toString());
             }
             return config;
         }

@@ -339,7 +339,7 @@ collegeToCorporateApp.post('/checkforemail', function (request, response) {
     checkForEmailId(request.body.emailId).then(function (success) {
         response.json({internalStatusCode: 1000, emailId: success.emailId, isEmailIdExists: success.isEmailIdExists});
     }, function (error) {
-        response.json({internalStatusCode: error.errorCode, errorMessage: errorDescription});
+        response.json({internalStatusCode: error.errorCode, errorMessage: error.errorDescription});
     });
 });
 
@@ -855,6 +855,58 @@ collegeToCorporateApp.get('/admin/getData', function (request, response) {
 collegeToCorporateApp.get('/founders/getData', function (request, response) {
     response.send("Founder User");
 });
+
+
+/*
+* Feedback module starts from here
+* */
+
+var FeedbackModuleErrorCodes = {
+  FEEDBACK_QUESTIONS_DB_ERRORCODE: 3001
+};
+
+var FeedbackObjects = {};
+FeedbackObjects.FeedbackQuestionObject = function(row){
+    this.Id = row.questionId;
+    this.description = row.questionText;
+    this.type = row.questionType;
+    this.options = row.questionOptions.trim().split('|');
+    this.suggestion = row.questionSuggestion;
+}
+
+
+collegeToCorporateApp.post('/getFeedbackQuestionsData',function(request,response){
+    getFeedbackQuestionsData().then(function(success){
+        response.json({internalStatusCode: 1000, feedbackQuestionsData: success.feedbackQuestionsData});
+    },function(error){
+        response.json({internalStatusCode: error.errorCode, errorMessage: error.errorDescription,error: error.error});
+    });
+});
+
+var getFeedbackQuestionsData = function(){
+    logger.info("Entered get feedback questions function");
+    var deferred = Q.defer();
+    var getFeedbackQuestionsDataSql = "SELECT * FROM ?? ";
+    var getFeedbackQuestionsDataSqlInserts = ['FeedbackQuestions'];
+    getFeedbackQuestionsDataSql = mysql.format(getFeedbackQuestionsDataSql, getFeedbackQuestionsDataSqlInserts);
+    var getFeedbackQuestionsDataSqlQuery = sqlConnection.query(getFeedbackQuestionsDataSql, function (error, rows, fields) {
+        if (error) {
+            var errorDescription = "Error occured in querying feedback questions data";
+            var errorObject = {username: "NO_USERNAME_REQUIRED", error: error, errorDescription: errorDescription, errorCode: FeedbackModuleErrorCodes.FEEDBACK_QUESTIONS_DB_ERRORCODE};
+            logger.error(errorObject);
+            deferred.reject(errorObject);
+        }
+        else {
+            var data = [];
+            for(var i=0;i<rows.length;i++){
+              data.push(new FeedbackObjects.FeedbackQuestionObject(rows[i]));
+            }
+            deferred.resolve({username: "NO_USERNAME_REQUIRED", feedbackQuestionsData: data});
+        }
+    });
+    return deferred.promise;
+}
+
 
 
 collegeToCorporateApp.listen(7000);
