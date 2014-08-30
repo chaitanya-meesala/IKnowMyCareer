@@ -1,0 +1,9 @@
+1.What is your the department ?
+2.What is your Firm/Company name ?
+3.Location of the company ?
+4.Cost of Living ?
+5.What is your Profile ?
+6.Is this your first Company ?
+7.Technologies you knew before joining the current company/firm ?
+8.Technologies that you have learnt after joining this firm/Company ?
+9.Please explain about training program in your company ?
