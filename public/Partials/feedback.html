@@ -11,12 +11,22 @@
                 <ul style="list-style: none;">
                     <li ng-repeat="quest in questions">
 
-                        <multiple-choice ng-if="quest.type==='MULTI_SELECT'" question="quest"></multiple-choice>
+                        <multiple-choice data-ng-if="quest.type==='MULTI_SELECT'" question="quest"></multiple-choice>
 
-                        <multiple-select ng-if="quest.type==='MULTIPLE_CHOICE'" question="quest"></multiple-select>
+                        <multiple-select data-ng-if="quest.type==='MULTIPLE_CHOICE'" question="quest"></multiple-select>
 
-                        <short-answer  ng-if="quest.type==='SHORT_ANSWER'" question="quest"></short-answer>
+                        <short-answer  data-ng-if="quest.type==='SHORT_ANSWER'" question="quest"></short-answer>
 
+                        <div data-ng-if="quest.type === 'DROP_DOWN'">
+                            Question {{quest.description}}
+                            <select  data-ng-model="quest.answer"
+                            data-ng-options="option for option in quest.options"></select>
+                        </div>
+
+                        <div data-ng-if="quest.type === 'TEXT'">
+                            Question {{quest.description}}
+                            <input type="text" data-ng-model="quest.answer"/>
+                        </div>
                     </li>
 
                 </ul>

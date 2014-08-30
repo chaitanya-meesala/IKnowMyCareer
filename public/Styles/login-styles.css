@@ -318,3 +318,12 @@ textarea:focus, input:focus, input[type=text]:focus, .uneditable-input:focus {
     margin-right: 5%;
     position: relative;
 }
+
+.header-name{
+    float: right;
+    margin-right: 50px;
+    color: #ffffff;
+    font-family: 'Opensans_Regular';
+    font-size: 108%;
+    padding-top: 8px;
+}

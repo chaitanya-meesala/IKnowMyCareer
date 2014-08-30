@@ -16,8 +16,7 @@ ikmcControllersModule.controller('loginController',['$scope','$rootScope','$loca
 
 
     $scope.authenticationErrorFlag = false;
-
-
+    $rootScope.isUserAuthenticated = false;
 
     $scope.logIn = function(){
         authenticationService.authenticateUser($scope.loginCredentials).then(function(success){
