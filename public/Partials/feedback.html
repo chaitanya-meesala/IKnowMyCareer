@@ -1,13 +1,12 @@
-<div style="background-color: #247778;color: #ffffff ;margin-left:14%; font-family: 'Opensans_Regular';
-                  font-size: 100%;position: absolute;width: 80%;">
+<div  style="font-family: 'Opensans_Regular';font-size: 100%;">
 
     <div style="margin-top: 30px;margin-left: 4%;font-size: 125%;">
         Please contribute to this initiative by providing your valuable feedback
     </div>
 
-    <div  style="background-color: #247778;width:95%; height: 90%; margin: 5px; padding-bottom: 25px; padding-top: 25px;padding-left: 30px; ">
+    <div  style="margin: 5px; padding-bottom: 25px; padding-top: 25px;padding-left: 30px; ">
         <form>
-            <div ng-controller="feedbackController" style="background-color: #247778">
+            <div id="feedback-questions" ng-controller="feedbackController">
 
                 <ul style="list-style: none;">
                     <li ng-repeat="quest in questions">

@@ -95,3 +95,9 @@
 {"username":null,"errorDescription":"The username null does not exists in database","errorCode":2001,"level":"error","message":"","timestamp":"2014-08-29T18:47:01.199Z"}
 {"username":"fsgdgsdgd","errorDescription":"The username fsgdgsdgd does not exists in database","errorCode":2001,"level":"warn","message":"","timestamp":"2014-08-29T20:19:30.003Z"}
 {"username":"fsgdgsdgd","errorDescription":"The username fsgdgsdgd does not exists in database","errorCode":2001,"level":"error","message":"","timestamp":"2014-08-29T20:19:30.014Z"}
+{"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"warn","message":"","timestamp":"2014-08-30T05:28:27.274Z"}
+{"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"error","message":"","timestamp":"2014-08-30T05:28:27.275Z"}
+{"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"warn","message":"","timestamp":"2014-08-30T05:28:37.507Z"}
+{"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"error","message":"","timestamp":"2014-08-30T05:28:37.507Z"}
+{"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"warn","message":"","timestamp":"2014-08-30T05:29:09.777Z"}
+{"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"error","message":"","timestamp":"2014-08-30T05:29:09.778Z"}

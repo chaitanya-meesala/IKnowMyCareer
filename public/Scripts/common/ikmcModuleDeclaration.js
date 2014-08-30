@@ -33,7 +33,8 @@ ikmcApp.config(['$routeProvider',function($routeProvider){
         }).
         when('/feedback',{
             templateUrl: 'Partials/feedback.html',
-            controller: 'feedbackController'
+            controller: 'feedbackController',
+            isLoginRequired: true
         }).
         otherwise({
             redirectTo: '/'

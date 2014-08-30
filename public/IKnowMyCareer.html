@@ -11,9 +11,14 @@
     <link href="Styles/campusToCorporateStyles.css" type="text/css" rel="stylesheet"/>
 
 </head>
-<body>
+<body style="background-color: #ffffff;color: #000000" data-ng-controller="mainController">
 
+<div data-ng-if="!isLoginRelatedPage"
+     style="background-color: #1D5F60;height: 60px;width:100%;padding-top: 12px;">
+    <span class="logo" style="float: left; margin-left: 50px;">I Know My Career</span>
+    <span style="float: right;margin-right: 50px;">{{firstName}}&nbsp;{{lastName}}</span>
 
+</div>
 
 <div data-ng-view=""></div>
 
@@ -35,6 +40,7 @@
 
 <script src="Scripts/services/ikmc-authentication-service.js"></script>
 
+<script src="Scripts/controllers/ikmc-main-controller.js"></script>
 <script src="Scripts/controllers/ikmc-login-controller.js"></script>
 <script src="Scripts/controllers/ikmc-registration-controller.js"></script>
 <script src="Scripts/controllers/ikmc-success-controller.js"></script>

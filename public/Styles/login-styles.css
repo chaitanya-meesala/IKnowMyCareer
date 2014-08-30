@@ -73,7 +73,7 @@ div,table,span,img,p{
     background-color: #1D5F60;
 }
 
-#logo{
+.logo{
     font-family: 'Roboto';
     color: #ffffff;
     font-size: 25px;

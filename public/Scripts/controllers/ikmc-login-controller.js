@@ -17,18 +17,15 @@ ikmcControllersModule.controller('loginController',['$scope','$rootScope','$loca
 
     $scope.authenticationErrorFlag = false;
 
-    $rootScope.$on('$routeChangeStart', function (event, next) {
-        var userAuthenticated = $rootScope.isUserAuthenticated;
-        if (!userAuthenticated ) {
-            $location.path('/');
-        }
-    });
+
 
     $scope.logIn = function(){
         authenticationService.authenticateUser($scope.loginCredentials).then(function(success){
             $log.info(success.data);
             if(success.data.internalStatusCode == 1000){
                 $rootScope.isUserAuthenticated = true;
+                $rootScope.firstName = success.data.userInformation.firstName;
+                $rootScope.lastName = success.data.userInformation.lastName;
                 $location.path('/feedback');
             }
             else{
