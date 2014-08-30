@@ -1,8 +1,8 @@
 
 <div data-ng-init="question.answer=[]">
-Question {{question.description}}<br/>
+    {{question.Id.substring(7) | number}}  {{question.description}}<br/>
     <div style="padding-left: 30px">
-        <table class="table" style="border:none;">
+        <!--<table class="table" style="border:none;">
             <tr >
                 <td style="border: none;" class="col-sm-1"> <input type="checkbox" data-ng-checked="question.answer.indexOf('ONE')>-1" data-ng-click="toggleSelection('ONE')" ><label style="margin-left: 10px;font-weight: normal;">{{question.options.one}}</label></input> </td>
                 <td style="border: none;" class="col-sm-4"> <input type="checkbox" data-ng-checked="question.answer.indexOf('TWO')>-1" data-ng-click="toggleSelection('TWO')"><label style="margin-left: 10px;font-weight: normal;">{{question.options.two}}</label></input> </td>
@@ -12,6 +12,11 @@ Question {{question.description}}<br/>
                 <td style="border: none;"><input type="checkbox" data-ng-checked="question.answer.indexOf('THREE')>-1" data-ng-click="toggleSelection('THREE')" ><label style="margin-left: 10px;font-weight: normal;">{{question.options.three}}</label></input></td>
                 <td style="border: none;"><input type="checkbox" data-ng-checked="question.answer.indexOf('FOUR')>-1" data-ng-click="toggleSelection('FOUR')" ><label style="margin-left: 10px;font-weight: normal;">{{question.options.four}}</label></input></td>
             </tr>
-        </table>
+        </table>-->
+        <ul>
+            <li  data-ng-repeat="option in question.options">
+                <input type="checkbox" data-ng-checked="question.answer.indexOf(option)>-1" data-ng-click="toggleSelection(option)" />{{option}}
+            </li>
+        </ul>
     </div>
   </div>

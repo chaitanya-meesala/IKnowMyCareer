@@ -1,4 +1,4 @@
-ikmcControllersModule.controller('loginController',['$scope','$rootScope','$location','authenticationService','$log',function($scope,$rootScope,$location,authenticationService,$log){
+ikmcControllersModule.controller('loginController',['$scope','$rootScope','$location','authenticationService','$log','$window',function($scope,$rootScope,$location,authenticationService,$log,$window){
     $scope.loginCredentials = {username: null, password: null};
     $scope.carouselControls = {
       slideInterval: 5000,
@@ -25,6 +25,7 @@ ikmcControllersModule.controller('loginController',['$scope','$rootScope','$loca
                 $rootScope.isUserAuthenticated = true;
                 $rootScope.firstName = success.data.userInformation.firstName;
                 $rootScope.lastName = success.data.userInformation.lastName;
+                $window.sessionStorage.token = success.data.token;
                 $location.path('/feedback');
             }
             else{

@@ -867,10 +867,14 @@ var FeedbackModuleErrorCodes = {
 
 var FeedbackObjects = {};
 FeedbackObjects.FeedbackQuestionObject = function(row){
+
     this.Id = row.questionId;
     this.description = row.questionText;
     this.type = row.questionType;
-    this.options = row.questionOptions.trim().split('|');
+    this.options = (function(data){
+        if(!data){return null;}
+        return data.trim().split('#');
+    })(row.questionOptions);
     this.suggestion = row.questionSuggestion;
 }
 

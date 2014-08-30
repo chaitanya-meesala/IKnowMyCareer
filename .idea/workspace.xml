@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b70cc4b-7d40-4056-9d40-9817b3d20777" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Scripts/services/ikmc-feedback-service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CampusToCorporateNode.js" afterPath="$PROJECT_DIR$/CampusToCorporateNode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/IKnowMyCareer.html" afterPath="$PROJECT_DIR$/public/IKnowMyCareer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Partials/feedback.html" afterPath="$PROJECT_DIR$/public/Partials/feedback.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Scripts/factories/ikmc-auth-interceptor-factory.js" afterPath="$PROJECT_DIR$/public/Scripts/factories/ikmc-auth-interceptor-factory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-choice.html" afterPath="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-choice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-select.html" afterPath="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Scripts/objects/ikmc-feedback-question-object.js" afterPath="$PROJECT_DIR$/public/Scripts/objects/ikmc-feedback-question-object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-short-answer.html" afterPath="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-short-answer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Scripts/controllers/ikmc-feedback-questions-controller.js" afterPath="$PROJECT_DIR$/public/Scripts/controllers/ikmc-feedback-questions-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Scripts/controllers/ikmc-login-controller.js" afterPath="$PROJECT_DIR$/public/Scripts/controllers/ikmc-login-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Scripts/common/ikmcModuleDeclaration.js" afterPath="$PROJECT_DIR$/public/Scripts/common/ikmcModuleDeclaration.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IKnowMyCareer.iws" />
@@ -33,7 +38,7 @@
       <file leaf-file-name="CampusToCorporateNode.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CampusToCorporateNode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="877" column="53" selection-start="44369" selection-end="44393" vertical-scroll-proportion="0.0" vertical-offset="4154" max-vertical-offset="5025">
+            <state line="875" column="38" selection-start="44339" selection-end="44339" vertical-scroll-proportion="0.0" vertical-offset="4005" max-vertical-offset="5085">
               <folding>
                 <element signature="e#7798#9406#0" expanded="false" />
                 <element signature="e#9434#9867#0" expanded="false" />
@@ -75,55 +80,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IKnowMyCareer.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/IKnowMyCareer.html">
+      <file leaf-file-name="ikmc-feedback-question-short-answer.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-short-answer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1980" selection-end="1980" vertical-scroll-proportion="-6.375" vertical-offset="492" max-vertical-offset="975">
+            <state line="2" column="4" selection-start="11" selection-end="49" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ikmc-error-controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/Scripts/controllers/ikmc-error-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ikmc-feedback-questions-controller.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ikmc-feedback-questions-controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/Scripts/controllers/ikmc-feedback-questions-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="46" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="12" column="34" selection-start="505" selection-end="505" vertical-scroll-proportion="0.42154565" vertical-offset="0" max-vertical-offset="427">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ikmc-auth-interceptor-factory.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/Scripts/factories/ikmc-auth-interceptor-factory.js">
+      <file leaf-file-name="feedback.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/Partials/feedback.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="4" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="34" column="131" selection-start="1741" selection-end="1741" vertical-scroll-proportion="-9.291667" vertical-offset="287" max-vertical-offset="690">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ikmc-feedback-question-multiple-choice.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-choice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="42" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ikmcModuleDeclaration.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/Scripts/common/ikmcModuleDeclaration.js">
+      <file leaf-file-name="ikmc-feedback-question-multiple-select.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-select.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="36" selection-start="459" selection-end="459" vertical-scroll-proportion="0.53956836" vertical-offset="0" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ikmc-service-module-declaration.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/Scripts/services/ikmc-service-module-declaration.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="21" selection-start="4" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+            <state line="2" column="42" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -152,22 +152,22 @@
         <option value="$PROJECT_DIR$/public/Scripts/directives/ikmc-feedback-question-multiple-options-directive.js" />
         <option value="$PROJECT_DIR$/public/Scripts/directives/ikmc-feedback-question-short-answer-directive.js" />
         <option value="$PROJECT_DIR$/public/Scripts/directives/ikmc-feedback-question-multiple-select-directive.js" />
-        <option value="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-select.html" />
-        <option value="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-choice.html" />
-        <option value="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-short-answer.html" />
-        <option value="$PROJECT_DIR$/public/Scripts/common/ikmcModuleDeclaration.js" />
         <option value="$PROJECT_DIR$/public/Partials/login.html" />
         <option value="$PROJECT_DIR$/public/Styles/login-styles.css" />
-        <option value="$PROJECT_DIR$/public/Scripts/controllers/ikmc-login-controller.js" />
         <option value="$PROJECT_DIR$/public/Scripts/controllers/ikmc-main-controller.js" />
-        <option value="$PROJECT_DIR$/public/Scripts/objects/ikmc-feedback-question-object.js" />
-        <option value="$PROJECT_DIR$/public/Partials/feedback.html" />
-        <option value="$PROJECT_DIR$/CampusToCorporateNode.js" />
         <option value="$PROJECT_DIR$/public/Scripts/services/ikmc-feedback-service.js" />
         <option value="$PROJECT_DIR$/public/Scripts/common/appConfig.js" />
         <option value="$PROJECT_DIR$/public/IKnowMyCareer.html" />
-        <option value="$PROJECT_DIR$/public/Scripts/controllers/ikmc-feedback-questions-controller.js" />
+        <option value="$PROJECT_DIR$/public/Scripts/common/ikmcModuleDeclaration.js" />
+        <option value="$PROJECT_DIR$/public/Scripts/controllers/ikmc-login-controller.js" />
         <option value="$PROJECT_DIR$/public/Scripts/factories/ikmc-auth-interceptor-factory.js" />
+        <option value="$PROJECT_DIR$/public/Scripts/objects/ikmc-feedback-question-object.js" />
+        <option value="$PROJECT_DIR$/CampusToCorporateNode.js" />
+        <option value="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-short-answer.html" />
+        <option value="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-select.html" />
+        <option value="$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-choice.html" />
+        <option value="$PROJECT_DIR$/public/Partials/feedback.html" />
+        <option value="$PROJECT_DIR$/public/Scripts/controllers/ikmc-feedback-questions-controller.js" />
       </list>
     </option>
   </component>
@@ -559,16 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-select.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.6722689" vertical-offset="0" max-vertical-offset="357">
-          <folding>
-            <element signature="n#style#0;n#label#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#label#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/Scripts/directives/ikmc-feedback-question-multiple-options-directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="75" selection-start="275" selection-end="275" vertical-scroll-proportion="0.32374102" vertical-offset="0" max-vertical-offset="417">
@@ -579,13 +569,6 @@
     <entry file="file://$PROJECT_DIR$/public/Scripts/directives/ikmc-feedback-question-short-answer-directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="3" selection-start="240" selection-end="240" vertical-scroll-proportion="0.25917926" vertical-offset="0" max-vertical-offset="463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-short-answer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="38" selection-end="38" vertical-scroll-proportion="0.08645533" vertical-offset="0" max-vertical-offset="347">
           <folding />
         </state>
       </provider>
@@ -613,44 +596,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/Scripts/controllers/ikmc-login-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/Scripts/controllers/ikmc-main-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/Scripts/objects/ikmc-feedback-question-object.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-choice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="1073" selection-end="1073" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="315">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/Partials/feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="1187" selection-end="1187" vertical-scroll-proportion="-13.75" vertical-offset="15" max-vertical-offset="690">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,9 +624,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/Scripts/controllers/ikmc-error-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Scripts/services/ikmc-service-module-declaration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="21" selection-start="4" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Scripts/directives/ikmc-directives-module-declaration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="417">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/IKnowMyCareer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1980" selection-end="1980" vertical-scroll-proportion="-8.875" vertical-offset="432" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Scripts/common/ikmcModuleDeclaration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Scripts/controllers/ikmc-login-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="62" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Scripts/factories/ikmc-auth-interceptor-factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="84" selection-start="317" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Scripts/objects/ikmc-feedback-question-object.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CampusToCorporateNode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="877" column="53" selection-start="44369" selection-end="44393" vertical-scroll-proportion="0.0" vertical-offset="4154" max-vertical-offset="5025">
+        <state line="875" column="38" selection-start="44339" selection-end="44339" vertical-scroll-proportion="0.0" vertical-offset="4005" max-vertical-offset="5085">
           <folding>
             <element signature="e#7798#9406#0" expanded="false" />
             <element signature="e#9434#9867#0" expanded="false" />
@@ -718,44 +723,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/Scripts/controllers/ikmc-error-controller.js">
+    <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-select.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="463">
+        <state line="2" column="42" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/IKnowMyCareer.html">
+    <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-short-answer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1980" selection-end="1980" vertical-scroll-proportion="-6.375" vertical-offset="492" max-vertical-offset="975">
+        <state line="2" column="4" selection-start="11" selection-end="49" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="165">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Templates/ikmc-feedback-question-multiple-choice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="42" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Partials/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="131" selection-start="1741" selection-end="1741" vertical-scroll-proportion="-9.291667" vertical-offset="287" max-vertical-offset="690">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/Scripts/controllers/ikmc-feedback-questions-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="46" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/Scripts/services/ikmc-service-module-declaration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="4" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/Scripts/factories/ikmc-auth-interceptor-factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/Scripts/common/ikmcModuleDeclaration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="36" selection-start="459" selection-end="459" vertical-scroll-proportion="0.53956836" vertical-offset="0" max-vertical-offset="720">
+        <state line="12" column="34" selection-start="505" selection-end="505" vertical-scroll-proportion="0.42154565" vertical-offset="0" max-vertical-offset="427">
           <folding />
         </state>
       </provider>

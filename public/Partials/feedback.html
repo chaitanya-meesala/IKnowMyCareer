@@ -1,6 +1,6 @@
 <div  style="font-family: 'Opensans_Regular';font-size: 100%;">
 
-    <div style="margin-top: 30px;margin-left: 4%;font-size: 125%;">
+    <div data-ng-init="init();" style="margin-top: 30px;margin-left: 4%;font-size: 125%;">
         Please contribute to this initiative by providing your valuable feedback
     </div>
 
@@ -11,20 +11,20 @@
                 <ul style="list-style: none;">
                     <li ng-repeat="quest in questions">
 
-                        <multiple-choice data-ng-if="quest.type==='MULTI_SELECT'" question="quest"></multiple-choice>
+                        <multiple-choice data-ng-if="quest.type==='MULTIPLE_CHOICE'" question="quest"></multiple-choice>
 
-                        <multiple-select data-ng-if="quest.type==='MULTIPLE_CHOICE'" question="quest"></multiple-select>
+                        <multiple-select data-ng-if="quest.type==='MULTI_SELECT'" question="quest"></multiple-select>
 
                         <short-answer  data-ng-if="quest.type==='SHORT_ANSWER'" question="quest"></short-answer>
 
                         <div data-ng-if="quest.type === 'DROP_DOWN'">
-                            Question {{quest.description}}
+                            {{quest.Id.substring(7) | number}}  {{quest.description}}
                             <select  data-ng-model="quest.answer"
                             data-ng-options="option for option in quest.options"></select>
                         </div>
 
                         <div data-ng-if="quest.type === 'TEXT'">
-                            Question {{quest.description}}
+                            {{quest.Id.substring(7) | number}}  {{quest.description}}
                             <input type="text" data-ng-model="quest.answer"/>
                         </div>
                     </li>
@@ -32,7 +32,7 @@
                 </ul>
 
                 <div style="margin-left: 3%;margin-top: 5%">
-                    <button type="button" class="btn btn-default" style="font-family: 'Tangerine', serif;">Submit</button>
+                    <button type="button" class="btn btn-default" style="font-family: 'Tangerine', serif;" data-ng-click="submit();">Submit</button>
                 </div>
             </div>
         </form>

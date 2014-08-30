@@ -3,10 +3,6 @@
  */
 var ikmcApp = angular.module('ikmcApp',['ngRoute','ikmcControllersModule','ikmcDirectivessModule']);
 
-ikmcApp.config(['$httpProvider',function($httpProvider){
-    $httpProvider.interceptors.push('authInterceptor');
-}]);
-
 
 ikmcApp.config(['$routeProvider',function($routeProvider){
 
