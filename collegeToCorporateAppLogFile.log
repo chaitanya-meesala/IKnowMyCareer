@@ -107,3 +107,7 @@
 {"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"error","message":"","timestamp":"2014-08-30T08:22:59.234Z"}
 {"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"warn","message":"","timestamp":"2014-08-30T10:08:53.431Z"}
 {"username":"chaitanya","errorDescription":"The password entered is incorrect for username: chaitanya","errorCode":2002,"level":"error","message":"","timestamp":"2014-08-30T10:08:53.433Z"}
+{"username":null,"errorDescription":"The username null does not exists in database","errorCode":2001,"level":"warn","message":"","timestamp":"2014-08-30T16:27:50.358Z"}
+{"username":null,"errorDescription":"The username null does not exists in database","errorCode":2001,"level":"error","message":"","timestamp":"2014-08-30T16:27:50.405Z"}
+{"username":"myla","errorDescription":"The password entered is incorrect for username: myla","errorCode":2002,"level":"warn","message":"","timestamp":"2014-08-30T16:37:23.024Z"}
+{"username":"myla","errorDescription":"The password entered is incorrect for username: myla","errorCode":2002,"level":"error","message":"","timestamp":"2014-08-30T16:37:23.025Z"}

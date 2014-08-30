@@ -11,21 +11,21 @@
                 <ul style="list-style: none;">
                     <li ng-repeat="quest in questions">
 
-                        <multiple-choice data-ng-if="quest.type==='MULTIPLE_CHOICE'" question="quest"></multiple-choice>
+                        <multiple-choice class="ikmc-feedback-question" data-ng-if="quest.type==='MULTIPLE_CHOICE'" question="quest"></multiple-choice>
 
-                        <multiple-select data-ng-if="quest.type==='MULTI_SELECT'" question="quest"></multiple-select>
+                        <multiple-select class="ikmc-feedback-question" data-ng-if="quest.type==='MULTI_SELECT'" question="quest"></multiple-select>
 
                         <short-answer  data-ng-if="quest.type==='SHORT_ANSWER'" question="quest"></short-answer>
 
-                        <div data-ng-if="quest.type === 'DROP_DOWN'">
-                            {{quest.Id.substring(7) | number}}  {{quest.description}}
-                            <select  data-ng-model="quest.answer"
+                        <div data-ng-if="quest.type === 'DROP_DOWN'" class="ikmc-feedback-question">
+                            {{quest.Id.substring(7) | number}}.  {{quest.description}}
+                            <select  data-ng-model="quest.answer" class="ikmc-feedback-question-dropdown"
                             data-ng-options="option for option in quest.options"></select>
                         </div>
 
-                        <div data-ng-if="quest.type === 'TEXT'">
-                            {{quest.Id.substring(7) | number}}  {{quest.description}}
-                            <input type="text" data-ng-model="quest.answer"/>
+                        <div data-ng-if="quest.type === 'TEXT'" class="ikmc-feedback-question">
+                            {{quest.Id.substring(7) | number}}.  {{quest.description}}
+                            <input type="text" data-ng-model="quest.answer" class="ikmc-feedback-input-box"/>
                         </div>
                     </li>
 

@@ -1,6 +1,5 @@
 <div>
-    {{question.Id.substring(7) | number}} {{question.description}}<br/>
-    <div style="padding-left: 30px">
+    <div class="ikmc-feedback-question">
         <!--<table class="table" style="border:none;">
             <tr >
                 <td style="border: none;" class="col-sm-1"> <input type="radio"  data-ng-model="question.answer" value="ONE"><label style="margin-left: 10px;font-weight: normal;">{{question.options[0]}}</label></input> </td>
@@ -12,7 +11,8 @@
                 <td style="border: none;"><input type="radio" data-ng-model="question.answer" value="FOUR"><label style="margin-left: 10px;font-weight: normal;">{{question.options[3]}}</label></input></td>
             </tr>
         </table>-->
-        <ul>
+        {{question.Id.substring(7) | number}}. {{question.description}}<br/>
+        <ul style="list-style: none;">
             <li data-ng-repeat="option in question.options">
                 <input type="radio" data-ng-model="question.answer" value="{{option}}"> {{option}}
             </li>

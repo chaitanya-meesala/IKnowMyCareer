@@ -327,3 +327,48 @@ textarea:focus, input:focus, input[type=text]:focus, .uneditable-input:focus {
     font-size: 108%;
     padding-top: 8px;
 }
+
+.ikmc-feedback-question{
+    min-height: 70px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.ikmc-feedback-question-dropdown{
+    display: block;
+    margin-top: 10px;
+    margin-left: 12px;
+    /* height: 47px; */
+    font-family: 'Opensans_Regular';
+    font-size: 16px;
+}
+
+.ikmc-feedback-input-box{
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 27px;
+    font-size: 13px;
+    padding-left: 6px;
+    width: 233px;
+}
+
+.ikmc-feedback-input-box:focus{
+    background-color: #ffffff !important;
+    border: 1px solid #31b0d5 !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: 0 none;
+}
+
+.ikmc-feedback-question li{
+    margin-top: 4px;
+}
+
+.ikmc-feedback-question textarea:focus{
+    background-color: #ffffff !important;
+    border: 1px solid #31b0d5 !important;
+    box-shadow: none;
+    outline: 0 none;
+}
