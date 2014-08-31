@@ -862,7 +862,8 @@ collegeToCorporateApp.get('/founders/getData', function (request, response) {
 * */
 
 var FeedbackModuleErrorCodes = {
-  FEEDBACK_QUESTIONS_DB_ERRORCODE: 3001
+  FEEDBACK_QUESTIONS_DB_ERRORCODE: 3001,
+  FEEDBACK_ANSWERS_DB_ERRORCODE: 3002
 };
 
 var FeedbackObjects = {};
@@ -887,8 +888,16 @@ collegeToCorporateApp.post('/getFeedbackQuestionsData',function(request,response
     });
 });
 
+collegeToCorporateApp.post('/postFeedbackAnswersData',function(request,response){
+    submitFeedbackQuestionsAnswers(request.body.companyName,request.body.feedbackAnswersData,request.body.username).then(function(){
+       response.json({internalStatusCode:1000, isFeedbackSubmissionSuccessful: true});
+    },function(error){
+       response.json({internalStatusCode: error.errorCode, errorMessage: error.errorDescription, error: error.error});
+    });
+});
+
 var getFeedbackQuestionsData = function(){
-    logger.info("Entered get feedback questions function");
+
     var deferred = Q.defer();
     var getFeedbackQuestionsDataSql = "SELECT * FROM ?? ";
     var getFeedbackQuestionsDataSqlInserts = ['FeedbackQuestions'];
@@ -911,6 +920,35 @@ var getFeedbackQuestionsData = function(){
     return deferred.promise;
 }
 
+var submitFeedbackQuestionsAnswers = function(companyName,feedbackData,username){
+    var deferred = Q.defer();
+    var values = [];
+    if(!username){
+        username = "No_Username";
+    }
+    for(var i=0 ;i< feedbackData.length;i++){
+        var temp = [];
+        temp.push(username);
+        temp.push(companyName);
+        temp.push(feedbackData[i].questionId);
+        temp.push(feedbackData[i].answer);
+        values.push(temp);
+    }
+    var submitFeedbackDataSql = "INSERT INTO ??(??,??,??,??) VALUES ?";
+    var submitFeedbackDataSqlInserts = ['FeedbackAnswers','username','company','questionId','answerText',values];
+    submitFeedbackDataSql = mysql.format(submitFeedbackDataSql,submitFeedbackDataSqlInserts);
+    var submitFeedbackDataSqlSqlQuery = sqlConnection.query(submitFeedbackDataSql,function(error,rows,fields){
+        if (error) {
+            var errorDescription = "Error occurred in inserting feedback answers";
+            var errorObject = {username: "NO_USERNAME_REQUIRED", error: error, errorDescription: errorDescription, errorCode: FeedbackModuleErrorCodes.FEEDBACK_ANSWERS_DB_ERRORCODE};
+            logger.error(errorObject);
+            deferred.reject(errorObject);
+        }else{
+           deferred.resolve({isFeedbackAnswersInsertionSuccessful: true});
+        }
+    });
+    return deferred.promise;
+};
 
 
 collegeToCorporateApp.listen(7000);

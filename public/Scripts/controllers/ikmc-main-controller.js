@@ -1,11 +1,17 @@
-ikmcControllersModule.controller('mainController',['$scope','$rootScope','$location',
-    '$log',function($scope,$rootScope,$location,$log){
+ikmcControllersModule.controller('mainController',['$scope','$rootScope','$location','$window',
+    '$log',function($scope,$rootScope,$location,$window,$log){
 
     $scope.isLoginRelatedPage = true;
 
+
+        $rootScope.firstName = $window.sessionStorage.firstName;
+        $rootScope.lastName = $window.sessionStorage.lastName;
+        $rootScope.username = $window.sessionStorage.username;
+        $rootScope.isUserAuthenticated = $window.sessionStorage.isUserAuthenticated;
+
     $rootScope.$on('$routeChangeStart', function (event, next) {
 
-        /*if (!$rootScope.isUserAuthenticated && !!next.isLoginRequired ) {
+       /* if (!$rootScope.isUserAuthenticated && !!next.isLoginRequired ) {
             $location.path('/');
         }*/
         if(next.isLoginRequired){
@@ -14,6 +20,7 @@ ikmcControllersModule.controller('mainController',['$scope','$rootScope','$locat
             $scope.isLoginRelatedPage = true;
         }
     });
+
 
      $rootScope.capitalizeFirstLetter = function(str){
          return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();

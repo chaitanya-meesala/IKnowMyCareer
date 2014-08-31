@@ -18,13 +18,13 @@
                         <short-answer  data-ng-if="quest.type==='SHORT_ANSWER'" question="quest"></short-answer>
 
                         <div data-ng-if="quest.type === 'DROP_DOWN'" class="ikmc-feedback-question">
-                            {{quest.Id.substring(7) | number}}.  {{quest.description}}
+                            {{quest.Id.substring(7) | number}}.  {{quest.description}}<span data-ng-if="!!quest.suggestion">&nbsp;(e.g: {{quest.suggestion}})</span>
                             <select  data-ng-model="quest.answer" class="ikmc-feedback-question-dropdown"
                             data-ng-options="option for option in quest.options"></select>
                         </div>
 
                         <div data-ng-if="quest.type === 'TEXT'" class="ikmc-feedback-question">
-                            {{quest.Id.substring(7) | number}}.  {{quest.description}}
+                            {{quest.Id.substring(7) | number}}.  {{quest.description}}<span data-ng-if="!!quest.suggestion">&nbsp;(e.g: {{quest.suggestion}})</span>
                             <input type="text" data-ng-model="quest.answer" class="ikmc-feedback-input-box"/>
                         </div>
                     </li>
@@ -32,7 +32,7 @@
                 </ul>
 
                 <div style="margin-left: 3%;margin-top: 5%">
-                    <button type="button" class="btn btn-default" style="font-family: 'Tangerine', serif;" data-ng-click="submit();">Submit</button>
+                    <button type="button" class="btn btn-default" style="font-family: 'Tangerine', serif;" data-ng-click="submitFeedback();">Submit</button>
                 </div>
             </div>
         </form>

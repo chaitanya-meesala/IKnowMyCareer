@@ -9,14 +9,26 @@ ikmcControllersModule.controller('feedbackController',['$scope','$rootScope','fe
                }
            }
         }
-        $log.info(success.data.feedbackQuestionsData);
         $scope.questions = success.data.feedbackQuestionsData;
     },function(error){
     });
    }
 
-   $scope.submit = function(){
-        $log.info($scope.questions);
+   $scope.submitFeedback = function(){
+
+        var companyName = $scope.questions[1].answer;
+       feedbackService.postFeedbackAnswers($scope.questions,companyName).then(
+           function(success){
+               if(success.data.internalStatusCode == 1000){
+                   alert("Your feedback has been submitted successfully");
+               }else{
+                   alert(success.data.errorMessage);
+               }
+           },function(error){
+               alert("Unable to process your request");
+           }
+       );
+
     }
 
 }]);
