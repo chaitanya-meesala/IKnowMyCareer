@@ -282,7 +282,9 @@ collegeToCorporateApp.post('/login', function (request, response) {
         var agent = useragent.parse(request.headers['user-agent']);
         var userActivity = new UserActivityObject();
         userActivity.username = success.username;
-        userActivity.ipAddress = request.headers["client-ip-address"];
+        userActivity.ipAddress = request.headers["client-ip-address"]||request.headers['x-forwarded-for'] || request.connection.remoteAddress || request.socket.remoteAddress || request.connection.socket.remoteAddress;
+        logger.info(agent);
+        logger.info(userActivity.ipAddress);
         getGeoLocation(userActivity.ipAddress).then(function (success) {
             userActivity.geoLocation = success.geoLocation;
             userActivity.browserFamily = agent.family;

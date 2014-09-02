@@ -9,12 +9,12 @@
         <table cellspacing="0" class="table-condensed" style="float: right;margin-right: 35px;">
             <tbody>
             <tr>
-                <td class="data-label"><label for="email">Username</label></td>
+                <td class="data-label"><label for="username">Username</label></td>
                 <td class="data-label"><label for="pass">Password</label></td>
             </tr>
             <tr>
-                <td><input type="text" data-ng-model="loginCredentials.username" class="data-input" name="email" id="email" value="" tabindex="1"></td>
-                <td><input type="password" data-ng-model="loginCredentials.password" class="data-input" name="pass" id="pass" tabindex="2"></td>
+                <td><input type="text" data-ng-model="loginCredentials.username" class="data-input" name="username" id="username" value="" tabindex="1"></td>
+                <td><input type="password" data-ng-keyup="$event.keyCode == 13 && logIn()" data-ng-model="loginCredentials.password" class="data-input" name="pass" id="pass" tabindex="2"></td>
                 <td><label for="loginButton" class="login-button-label"><input class="kmc-button login-button-label"  value="Log In" tabindex="4" type="submit" data-ng-click="logIn();" id="loginButton"></label></td>
             </tr>
             <tr>
@@ -45,3 +45,4 @@
         <button data-ng-click="goToView('register');" class="register-button"> Register for FREE!</button>
     </div>
 </div>
+

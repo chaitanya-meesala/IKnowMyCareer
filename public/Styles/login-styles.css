@@ -1,5 +1,28 @@
 
 @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/OpenSans-Regular.ttf')  format('truetype'),
+         url('../fonts/OpenSans-Regular.woff') format('woff'),
+         url('../fonts/OpenSans-Regular.eot');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+
+@font-face {
+    font-family: 'Opensans_Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/OpenSans-Regular.ttf')  format('truetype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.eot');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+
+
+@font-face {
     font-family: 'Opensans_Semibold';
     src: url('../open-sans/OpenSans-Semibold.ttf') format('truetype');
 }
@@ -9,10 +32,7 @@
     src: url('../open-sans/OpenSans-Light.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Opensans_Regular';
-    src: url('../open-sans/OpenSans-Regular.ttf') format('truetype');
-}
+
 
 @font-face {
     font-family: 'Opensans_Italic';

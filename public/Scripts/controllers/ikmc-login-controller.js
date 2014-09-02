@@ -21,11 +21,11 @@ ikmcControllersModule.controller('loginController',['$scope','$rootScope','$loca
         authenticationService.authenticateUser($scope.loginCredentials).then(function(success){
             $log.info(success.data);
             if(success.data.internalStatusCode == 1000){
-                $window.sessionStorage.isUserAuthenticated = true;
+                $rootScope.isUserAuthenticated = $window.sessionStorage.isUserAuthenticated = true;
                 $window.sessionStorage.token = success.data.token;
-                $window.sessionStorage.username = $scope.loginCredentials.username;
-                $window.sessionStorage.firstName = success.data.userInformation.firstName;
-                $window.sessionStorage.lastName = success.data.userInformation.lastName;
+                $rootScope.username = $window.sessionStorage.username = $scope.loginCredentials.username;
+                $rootScope.firstName = $window.sessionStorage.firstName = success.data.userInformation.firstName;
+                $rootScope.lastName = $window.sessionStorage.lastName = success.data.userInformation.lastName;
                 $location.path('/feedback');
             }
             else{
